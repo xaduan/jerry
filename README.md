@@ -25,3 +25,9 @@ yarn run build
 ```
 yarn run lint
 ```
+
+### tip
+
+```
+@ is an alias to /src   // @代表路径/src
+```
