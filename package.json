@@ -1,5 +1,5 @@
 {
-  "name": "letShare",
+  "name": "letshare",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,8 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {

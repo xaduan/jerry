@@ -8,7 +8,10 @@
 export default {
   name: "HelloKitty",
   props: {
-    msg: String
+    msg: {
+      type:String,
+      default:'msgq'  
+    }
   }
 };
 </script>
