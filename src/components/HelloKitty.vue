@@ -1,18 +1,20 @@
 <template>
   <div class="hello">
-    hellokitty
+    {{haha}}
+    {{name}}
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-  name: "HelloKitty",
-  props: {
-    msg: {
-      type:String,
-      default:'msgq'  
+  name: 'HelloKitty',
+  props: ['msg'],
+  computed: Object.assign(mapState(['name']), {
+    haha() {
+      return '哈哈';
     }
-  }
+  })
 };
 </script>
 
