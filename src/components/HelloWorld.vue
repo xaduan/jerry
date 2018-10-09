@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}msg</h1>
     {{ name }}
-    
   </div>
 </template>
 
@@ -11,11 +10,11 @@ export default {
   props: {
     msg: {
       type: String,
-      default: "默认属性"
+      default: '默认属性'
     },
     name: {
       type: String,
-      default: "aaa"
+      default: 'aaa'
     }
   }
 };
