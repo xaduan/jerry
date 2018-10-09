@@ -1,31 +1,13 @@
 {
-  "workbench.iconTheme": "vscode-icons",
-  "window.zoomLevel": 0,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.formatOnSave": false,
-  "[typescriptreact]": {},
-  "search.followSymlinks": false,
-  "editor.tabSize": 2,
-  "prettier.singleQuote": true,
-  "typescript.extension.sortImports.quoteStyle": "single",
-  "typescriptHero.imports.stringQuoteStyle": "\"",
-  "editor.parameterHints": true,
-  "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-  },
-  "sync.gist": "6cc5fc204b4979f1ceddcc01aa2dab08",
-  "sync.host": "",
-  "sync.pathPrefix": "",
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.lastUpload": "",
-  "sync.lastDownload": "",
-  "sync.forceDownload": false,
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.css": true,
+    ".idea": true,
+    "yarn.lock": true
+  }
 }

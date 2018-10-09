@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <svg class="icon" aria-hidden="true">
-      <use xlink:href="#icon-jerry"></use>
+    <svg 
+      class="icon" 
+      aria-hidden="true">
+      <use xlink:href="#icon-jerry"/>
     </svg>
     <div id="nav">
       <router-link to="/">Home</router-link> |
