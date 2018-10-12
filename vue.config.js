@@ -7,7 +7,5 @@ module.exports = {
     'my-dep',
     /other-dep/
   ],
-  lintOnSave: false,
-  baseUrl: process.env.NODE_ENV === 'production' ?
-    '/dist/' : '/'
+  lintOnSave: false
 }
