@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
-    {{haha}}
-    {{name}}
-    我是请求的数据{{msg2}}
+    {{ haha }}
+    {{ name }}
+    我是请求的数据{{ msg2 }}
   </div>
 </template>
 
@@ -16,7 +16,6 @@ export default {
       msg2: null
     };
   },
-  props: ['msg'],
   computed: Object.assign(mapState(['name']), {
     haha() {
       return '哈哈';
