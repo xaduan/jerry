@@ -13,12 +13,14 @@ export default {
   name: 'HelloKitty',
   data() {
     return {
-      msg2: null
+      msg2: null,
+      number1: 1,
+      number2: 2
     };
   },
   computed: Object.assign(mapState(['name']), {
     haha() {
-      return '哈哈';
+      return this.number1 + this.number2;
     }
   }),
   mounted() {

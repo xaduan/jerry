@@ -2,8 +2,10 @@
   <div class="home">
     {{homeState}}
     数字state{{message}}
-    <Button type="primary" ghost @click="countState">点我数字state+1</Button>   
+    <Button type="primary" ghost @click="countState">点我数字state+1</Button> 
+    {{SumNumber}}  
     <HelloWorld :msg="666"/>
+    sum{{sum}}
   </div>
 </template>
 
@@ -19,12 +21,17 @@ export interface HomeState {
       homeState: 'homeState'
     };
   },
+
   components: {
     HelloWorld
   }
 })
 export default class Home extends Vue {
   message: number = 0;
+  number1: number = 1;
+  get SumNumber(): number {
+    return this.number1 + this.message;
+  }
   countState(): void {
     this.message++;
   }
