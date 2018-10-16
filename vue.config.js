@@ -3,7 +3,7 @@ module.exports = {
     port: 8888,
     proxy: {
       '/api': {
-        target: 'http://localhost:3030',
+        target: 'http://xaduan.bceapp.com',
         changeOrigin: true
       }
     }
