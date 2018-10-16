@@ -16,6 +16,7 @@ function copyDir(src, dist, callback) {
 
   function _copy(err, src, dist) {
     if (err) {
+      console.log('aaa');
       callback(err);
     } else {
       fs.readdir(src, function(err, paths) {
@@ -45,8 +46,23 @@ function copyDir(src, dist, callback) {
   }
 }
 
-
-copyDir('./dist', '../baeapp-inu8e025em64/dist', function(err) {
+function deleteall(path) {
+  var files = [];
+  if (fs.existsSync(path)) {
+    files = fs.readdirSync(path);
+    files.forEach(function(file, index) {
+      var curPath = path + "/" + file;
+      if (fs.statSync(curPath).isDirectory()) { // recurse
+        deleteall(curPath);
+      } else { // delete file
+        fs.unlinkSync(curPath);
+      }
+    });
+    fs.rmdirSync(path);
+  }
+};
+deleteall('../baeapp-inu8e025em64/dist'); // 先删除，再copy
+copyDir('./dist', '../baeapp-inu8e025em64/dist', function(err) { // copy
   if (err) {
     console.log(err);
   } else {
