@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    {{homeState}}
-    数字state{{message}}
-    <Button type="primary" ghost @click="countState">点我数字state+1</Button> 
-    {{SumNumber}}  
+    数字state{{ message }}
+    <Button 
+      type="primary" 
+      ghost 
+      @click="countState">点我数字state+1</Button> 
+    {{ SumNumber }}  
     <HelloWorld :msg="666"/>
-    sum{{sum}}
   </div>
 </template>
 
@@ -13,9 +14,6 @@
 import { Component, Vue, Provide, Watch } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import Axios from 'axios';
-export interface HomeState {
-  homeState: string;
-}
 @Component({
   components: {
     HelloWorld

@@ -3,8 +3,10 @@
     {{ haha }}
     {{ name }}
     我是请求的数据
-  <div v-if="msg2">{{ msg2 }}</div>
-  <div style="margin:0 auto;display:inline-block;" v-else><Spin></Spin></div>
+    <div v-if="msg2">{{ msg2 }}</div>
+    <div 
+      v-else 
+      style="margin:0 auto;display:inline-block;"><Spin/></div>
    
   </div>
 </template>

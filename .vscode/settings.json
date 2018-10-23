@@ -10,5 +10,6 @@
     ".idea": true,
     "yarn.lock": true
   },
-  "svn.ignoreMissingSvnWarning": true
+  "svn.ignoreMissingSvnWarning": true,
+  "vetur.validation.template": false
 }
