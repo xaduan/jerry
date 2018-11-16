@@ -7,6 +7,10 @@
     <div 
       v-else 
       style="margin:0 auto;display:inline-block;"><Spin/></div>
+    <Button 
+      type="primary" 
+      ghost 
+      @click="callNewApi">点我请求自己的接口</Button> 
    
   </div>
 </template>
@@ -36,7 +40,8 @@ export default {
       axios.get('/api/getinfo').then(response => {
         this.msg2 = response.data;
       });
-    }
+    },
+    callNewApi() {}
   }
 };
 </script>
