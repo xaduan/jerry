@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.5.0",
+    "three": "^0.99.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",

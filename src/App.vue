@@ -17,6 +17,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Footer from '@/views/Footer.vue'; // @ is an alias to /src
+
 @Component({
   components: {
     Footer
